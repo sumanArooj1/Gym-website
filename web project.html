@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+ body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("img.png");
+    background-image: no-repeat;
+    color: white;
+ }
+ .left{
+/* border: 2px solid red; */
+position: absolute;
+    left: 34px;
+    top: 20px;
+display: inline-block;
+ }
+ .left img{
+     width: 64px;
+     filter: invert(100%);
+     padding: none;
+     margin: none;
+ }
+ .mid{
+    /* border: 2px solid rgb(213, 245, 9); */
+    display:block ;
+    width: 34%;
+    margin: 20px auto;
+ }
+ .right{
+    position: absolute;
+    right: 34px;
+    top: 35px;
+    /* border: 2px solid rgb(26, 253, 102); */
+    display: inline-block;
+    margin:12px ;
+}
+.btn{
+    margin: 0px 9px;
+    background-color: rgb(5, 13, 8);
+    color: white;
+    padding: 5px 4px;
+    border: 2px solid rgb(240, 243, 241);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.btn:hover{
+    background-color: rgb(109, 106, 100);
+}
+.navbar{
+ display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 17px;
+}
+.navbar li a{
+  color: white;
+  text-decoration: none;
+  padding: 34px 24px;
+  font-family:'Times New Roman', Times, serif;
+}
+.navbar li a:hover{
+ color: rgb(49, 47, 133);
+ text-decoration: underline;
+}
+.container{
+    border:2px solid white;
+    margin: 106px 20px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+.form-group{
+    margin:auto;
+    display: block;
+    text-align: centre;
+    width: 500px;
+    padding: 1px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.container h1{
+    text-align: centre;
+    color: rgb(45 215 51);
+}
+.container button{
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+.form-group input{
+    text-align: center;
+    display:block;
+    width: 345px;
+    padding: 6px;
+    margin: 3px auto;
+    border-radius: 8px;
+    border: 2px solid rgb(0, 0, 0);
+}
+</style>
+<body>
+    <header class="head">
+<div class="left">  
+ <img src="logo2.png" alt="">
+  <div>Fitness Gym</div>
+</div>
+<div class="mid">
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">FItness calculator</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+</div>
+<div class="right">
+<button class="btn">Contact us</button>
+<button class="btn">Email</button>
+</div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in the city</h1>
+        <form action="noaction.php">
+        <div class="form-group">
+            <input type="name" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="name" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="name" placeholder="Enter your Email">
+        </div>
+        <div class="form-group">
+            <input type="name" placeholder="Enter your Locality">
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+    </div>
+</body>
+</html>
